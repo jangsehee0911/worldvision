@@ -1,0 +1,254 @@
+*{
+    margin: 0; padding:0;
+    box-sizing: border-box;
+}
+ul{
+    list-style: none;
+}
+a{
+    text-decoration: none;
+    color: #333;
+}
+body{
+    color: #333;
+    font-family: 'Noto Sans KR', sans-serif;
+    font-size: 18px;
+}
+
+p{
+    line-height: 28px;
+}
+
+textarea {
+    resize: none;
+  }
+
+input:focus {
+    /* outline: 1px solid #4c81bf; */
+    outline: none;
+    box-shadow: 0 0 0 2px #4c81bf;
+  }
+  
+.img_responsive{
+    width: 380px;
+    height: 250px;
+}
+
+#main_header{
+    background: #fff;
+    height: 100px
+}
+
+#main_header .container{
+    position: relative;
+}
+
+#main_header .container > h1{
+    position: absolute;
+    left: 0; top:10px;
+}
+
+
+#gnb{
+    position: absolute;
+    right: 0; top:45px;
+    z-index: 999;
+}
+/* 1단계 메뉴 */
+#gnb > ul.depth1 > li{
+    float: left;
+    width: 130px;
+    text-align: center;
+    background: #fff;
+}
+
+#gnb > ul.depth1 > li:last-child{
+    margin-right: 0;
+}
+/* 2단계 메뉴 */
+#gnb ul .depth2{
+    /*outline: solid rgb(0,0,0,0.2);*/
+    margin-top: 20px;
+    padding-bottom: 20px;
+    padding: 20px 10px;
+    display: none;
+}
+
+#gnb ul.depth2 > li {
+    line-height: 2.5em;
+    font-size: 16px;
+}
+
+#gnb ul.depth1 > li > a:hover,
+#gnb ul.depth2 > li > a:hover{
+    color: #ff6600;
+    font-weight: bold;
+}
+
+#main_visual{
+    position: relative;
+    width: 100%; height: 620px;
+    /* outline: 2px solid red; */
+    margin: 0 auto;
+    overflow: hidden;
+}
+
+#main_visual .swiper-container{
+   /* outline: solid green;*/
+    width: 1920px;
+    height: 620px;
+    position: absolute;
+    left: calc(50% - (1920px / 2));
+}
+/* 화살표 위치 */
+.container1400{
+    width: 1400px;
+    position: relative;
+    margin: 0 auto;
+    outline: 2px solid red!important;
+}
+
+.swiper-button-prev,
+.swiper-button-next{
+    transform: translateY(-300px);
+    color: #fff;
+}
+
+.swiper-pagination-bullet{}
+.swiper-pagination-bullet-active {
+    background: #fff;
+}
+
+#financial h1{
+    text-align: center;
+}
+
+#financial{
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+#financial .container .col_5 {
+    /* background: #ff0; */
+    padding-top: 100px;
+    margin: 0 auto;
+  }
+#financial .container .col_7{
+    padding-top: 80px;
+    margin: 0 auto;
+}
+
+#financial h2{
+    font-weight: normal;
+    font-size: 15px;
+    margin-bottom: 30px
+}
+
+.btn-detail{
+    width: 250px;
+    height: 40px;
+    color: #ff6600;
+    border : 2px solid #ff6600;
+    display: block;
+    text-align: center;
+    line-height: 40px;
+    text-transform: uppercase;
+    font-size: 15px;
+    margin-top: 10px;
+    transition-duration: 0.4s;
+}
+
+.btn-detail:hover{
+background: #ff6600;
+color: #fff;
+}
+
+.btn-blue {
+    background: #4c81bf;
+    color: #fff;
+  }
+  .btn-blue:hover {
+    opacity: 0.8;
+  }
+
+#product{
+    padding-top: 100px;
+    padding-bottom: 100px;
+    background: #f8f8f8;
+    text-align: center;
+}
+
+#product h2, #ir h2, #notice h2{
+    font-size: 30px;
+    margin-bottom: 50px;
+}
+
+#ir {
+    margin-top: 100px;
+    margin-bottom: 100px;
+    padding-top: 100px;
+    padding-bottom: 100px;
+    text-align: center;
+    background: #ccc;
+    background: url(../images/bridge-banner1.JPG);
+    background-size: cover;
+    /* background-position: center; */
+    color: #fff;
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.6);
+}
+
+#ir h2 { margin-bottom: 40px;}
+
+#ir .btn-detail{
+    display: inline-block;
+    background:#ff6600;
+    color:#fff;
+    margin-top: 20px;
+}
+
+#ir .btn-detail:hover{
+    color:#fff;
+    background: #ff6600;
+    text-shadow: none;
+    opacity: 0.8;
+}
+#main_footer{
+background: #fff;
+padding-top: 50px;
+padding-bottom: 50px;
+color: #3b3c3d;
+font-size: 0.8em;
+}
+
+address{
+    font-style: normal;
+}
+
+#main_footer .info,
+#main_footer address{
+margin-bottom: 10px;
+}
+
+#main_footer .info >span {
+font-size: 18px;
+}
+#main_footer h2:first-child{
+margin-bottom: 10px;
+color:#ff6600;
+}
+
+#main_footer .sns> a > img{
+    margin-left: 10px;
+    margin-right: 10px;
+    display: inline-block;
+}
+#main_footer .sns> a > img:first-child{
+    margin-left: 0px;
+}
+
+#family >select{
+    width: 200px;
+    height: 30px;
+    margin-top: 35px;
+    border-color: rgba(0,0,0, 0.2);
+}
